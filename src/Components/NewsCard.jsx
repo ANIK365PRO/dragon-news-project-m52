@@ -63,12 +63,18 @@ const NewsCard = ({ news }) => {
       {/* Footer */}
       <div className="flex justify-between items-center mt-4 text-sm">
         <div className="flex items-center gap-1 text-orange-500">
-          <FaStar />
+          {/* Ratting */}
+          {Array.from({ length: rating.number }).map((rating, indx) => (
+            <FaStar key={indx} />
+          ))}
+
           <span className="text-gray-700">{rating.number}</span>
           <span className="text-xs text-green-500 ml-2 capitalize">
             {rating.badge}
           </span>
         </div>
+
+        {/* views*/}
         <div className="flex items-center gap-1 text-gray-600">
           <FaEye />
           <span>{total_view}</span>
