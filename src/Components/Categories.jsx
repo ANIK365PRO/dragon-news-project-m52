@@ -8,7 +8,9 @@ const Categories = () => {
   console.log(categories);
   return (
     <div className="">
-      <h2 className="font-bold mb-8">All Categories[{categories.length}]</h2>
+      <h2 className="text-primary font-bold mb-5">
+        All Categories[{categories.length}]
+      </h2>
 
       <div className="grid grid-cols-1 text-start gap-2">
         {categories.map(category => (

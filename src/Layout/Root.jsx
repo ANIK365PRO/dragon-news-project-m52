@@ -22,7 +22,7 @@ const Root = () => {
         </nav>
       </header>
 
-      <main className="container mx-auto py-3 *:border grid grid-cols-12 text-center mt-2">
+      <main className="container mx-auto py-3  grid grid-cols-12 gap-4 text-center mt-2">
         {/* Left aside  */}
         <aside className="col-span-3">
           <LeftAside></LeftAside>
