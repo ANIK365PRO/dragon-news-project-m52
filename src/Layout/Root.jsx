@@ -24,7 +24,7 @@ const Root = () => {
 
       <main className="container mx-auto py-3  grid grid-cols-12 gap-4 text-center mt-2">
         {/* Left aside  */}
-        <aside className="col-span-3">
+        <aside className="col-span-3 sticky top-0 h-fit">
           <LeftAside></LeftAside>
         </aside>
 
@@ -33,7 +33,7 @@ const Root = () => {
         </section>
 
         {/* Right Aside  */}
-        <aside className="col-span-3">
+        <aside className="col-span-3 sticky top-0 h-fit">
           <RightAside></RightAside>
         </aside>
       </main>
