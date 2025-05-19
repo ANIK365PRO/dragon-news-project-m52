@@ -12,7 +12,7 @@ const CategoryNews = () => {
 
   useEffect(() => {
     if (id == '0') {
-      console.log(data);
+      // console.log(data);
       setCategoryNews(data);
       return;
     } else if (id == '1') {
@@ -20,12 +20,12 @@ const CategoryNews = () => {
         news => news.others.is_today_pick == true
       );
 
-      console.log(filteredNews);
+      // console.log(filteredNews);
       setCategoryNews(filteredNews);
     } else {
       const filteredNews = data.filter(news => news.category_id == id);
 
-      console.log(filteredNews);
+      // console.log(filteredNews);
       setCategoryNews(filteredNews);
     }
   }, [data, id]);

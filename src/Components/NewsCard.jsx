@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaEye, FaRegBookmark, FaStar } from 'react-icons/fa';
 import { GoShareAndroid } from 'react-icons/go';
+import { Link } from 'react-router';
 
 const NewsCard = ({ news }) => {
-  const { title, author, image_url, details, rating, total_view, tags } = news;
+  const {id, title, author, image_url, details, rating, total_view, tags } = news;
 
   return (
     <div className="bg-white rounded-xl shadow border border-gray-200 p-4 w-full text-start">
@@ -46,7 +47,9 @@ const NewsCard = ({ news }) => {
       <p className="text-sm text-gray-600 mb-2">
         {details.length > 200 ? details.slice(0, 200) + '...' : details}
       </p>
-      <a className="text-red-500 font-semibold cursor-pointer">Read More</a>
+      <Link to={`/news-details/${id}`} className="text-red-500 font-semibold cursor-pointer">
+        Read More
+      </Link>
 
       {/* Tags */}
       <div className="mt-3 mb-2 flex flex-wrap gap-2">

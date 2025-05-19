@@ -12,6 +12,7 @@ const Root = () => {
     <div>
       <header className="container mx-auto">
         <Header></Header>
+        {import.meta.env.VITE_name}
 
         <section>
           <LatestNews></LatestNews>

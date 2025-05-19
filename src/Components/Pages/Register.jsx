@@ -9,13 +9,13 @@ const Register = () => {
   const handleRegister = (e) => {
     e.preventDefault();
     const form = (e.target);
-    console.log(form)
+    // console.log(form)
 
     const name = form.name.value;
     const photo = form.photo.value;
     const email = form.email.value;
     const password = form.password.value;
-    console.log([name, photo,email,password])
+    // console.log([name, photo,email,password])
 
     createUser(email, password)
     .then((result) => {
@@ -23,7 +23,7 @@ const Register = () => {
       const user = result.user;
 
       setUser(user);
-      console.log(user);
+      // console.log(user);
      
     })
     .catch((error) => {

@@ -11,13 +11,13 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-    console.log('trying to login ...', { email, password })
+    // console.log('trying to login ...', { email, password })
 
     loginUser(email, password)
       .then(result => {
         // Signed in
         const user = result.user;
-        console.log(user)
+        // console.log(user)
         alert('you login successful')
         // ...
       })
